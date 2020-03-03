@@ -43,6 +43,12 @@ app.route('/user')
             }
         }
         res.send(response);
+    })
+    .post(function (req, res) {
+        user = {
+            name: req.body.name,
+            surname: req.body.surname
+        }
     });
 
 app.listen(3000, () => {
